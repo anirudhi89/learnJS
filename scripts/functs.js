@@ -7,6 +7,9 @@
 // var length1 = 12;
 // var width1 = 14;
 // var area1 = length2 * width2;
+
+
+//funct to multiply lenght and width, and add to an array
 window.rectanglesAreas = [];
 
 function myFunct(yon, length, width) {
@@ -15,8 +18,8 @@ function myFunct(yon, length, width) {
         rectanglesAreas.push(x)
         let resp = window.confirm("Do again? ");
         if (resp == true) {
-            z = parseInt(window.prompt("enter a length"))
-            w = parseInt(window.prompt("enter a width"))
+            let z = parseInt(window.prompt("enter a length"))
+            let w = parseInt(window.prompt("enter a width"))
             myFunct(resp, z, w)
         }
         else break;
